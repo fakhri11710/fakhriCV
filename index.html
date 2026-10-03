@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rizky Pratama – Analis Data</title>
+<meta name="description" content="CV online Rizky Pratama, analis data dengan pengalaman 6 tahun di bidang logistik dan e-commerce.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --page:#E9EDF0;
+  --paper:#FFFFFF;
+  --side:#17323D;
+  --side-text:#DCE6EA;
+  --side-muted:#93A9B2;
+  --ink:#1E2A31;
+  --muted:#5A6A73;
+  --line:#D5DDE2;
+  --accent:#E3B23C;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--page);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+.sheet{max-width:1080px;margin:40px auto;display:grid;grid-template-columns:320px 1fr;background:var(--paper)}
+
+/* Kolom kiri */
+.side{background:var(--side);color:var(--side-text);padding:48px 32px}
+.avatar{width:96px;height:96px;background:var(--accent);color:var(--side);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:38px;font-weight:600;margin-bottom:28px}
+.side h1{font-family:var(--serif);font-weight:600;font-size:32px;line-height:1.15;color:#fff}
+.role{margin-top:8px;color:var(--side-muted);font-size:15px}
+.side section{margin-top:36px}
+.side h2{font-size:15px;font-weight:600;color:#fff;padding-bottom:8px;margin-bottom:14px;border-bottom:1px solid #2C4A57}
+.side ul{list-style:none}
+.side li{font-size:14.5px;padding:3px 0}
+.contact li{display:flex;flex-direction:column;padding:6px 0}
+.contact span{font-size:13px;color:var(--side-muted)}
+.contact a{text-decoration:none;word-break:break-all}
+.contact a:hover{text-decoration:underline}
+.level{display:flex;justify-content:space-between;gap:12px}
+.level em{font-style:normal;color:var(--side-muted)}
+.btn{margin-top:36px;width:100%;background:var(--accent);color:var(--side);border:0;font:600 15px var(--sans);padding:12px 16px;cursor:pointer}
+.btn:hover{background:#F0C45A}
+
+/* Kolom kanan */
+.main{padding:48px 52px}
+.main section+section{margin-top:44px}
+.main h2{font-family:var(--serif);font-weight:600;font-size:26px;line-height:1.2;display:flex;align-items:center;gap:14px;margin-bottom:20px}
+.main h2::before{content:"";width:8px;height:26px;background:var(--accent);flex:none}
+.lead{max-width:62ch;font-size:17px}
+
+.job{padding-left:22px;border-left:2px solid var(--line);position:relative}
+.job+.job{margin-top:28px}
+.job::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;background:var(--side)}
+.job header{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.job h3{font-size:17px;font-weight:600}
+.job .where{color:var(--muted);font-size:15px}
+.job time{color:var(--muted);font-size:14.5px;white-space:nowrap}
+.job ul{margin:10px 0 0 18px;max-width:64ch}
+.job li{margin:4px 0}
+
+.edu{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.edu+.edu{margin-top:16px}
+.edu h3{font-size:17px;font-weight:600}
+.edu p,.edu time{color:var(--muted);font-size:15px}
+
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.project{border:1px solid var(--line);padding:20px}
+.project h3{font-size:16.5px;font-weight:600;margin-bottom:6px}
+.project p{font-size:15px;color:var(--muted)}
+.project a{display:inline-block;margin-top:10px;font-size:14.5px;font-weight:500;text-decoration:underline;text-underline-offset:3px}
+
+footer{max-width:1080px;margin:0 auto 40px;padding:0 4px;color:var(--muted);font-size:13.5px;text-align:center}
+
+@media (max-width:860px){
+  .sheet{grid-template-columns:1fr;margin:0}
+  .side{padding:36px 24px}
+  .main{padding:36px 24px}
+  .projects{grid-template-columns:1fr}
+  footer{margin-top:20px}
+}
+
+@media print{
+  @page{margin:0}
+  body{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .sheet{margin:0;max-width:none}
+  .btn,footer{display:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="sheet">
+  <aside class="side">
+    <div class="avatar" aria-hidden="true">RP</div>
+    <h1>Fakhri Jabil Muhammad</h1>
+    <p class="role">siswa</p>
+
+    <section class="contact">
+      <h2>Kontak</h2>
+      <ul>
+        <li><span>Email</span><a href="mailto:rizky.pratama@email.com">f16001538@email.com</a></li>
+        <li><span>Telepon</span><a href="tel:+6281234567890">+62 821-2336-6096</a></li>
+        <li><span>Domisili</span>Bekasi</li>
+        <li><span>Alamat</span><a href="https://linkedin.com/in/rizkypratama"> VMG blok g12 no 22</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>pendidikan saat ini</h2>
+      <ul>
+        <li>SMK Galajuara</li>
+        <li>Kelas XI TKJ 1</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2></h2>
+      <ul>
+        <li class="level"><em></em></li>
+        <li class="level"></em></li>
+      </ul>
+    </section>
+
+    <button class="btn" onclick="window.print()">Unduh sebagai PDF</button>
+  </aside>
+
+  <main class="main">
+    <section id="profil">
+      <h2>Profil</h2>
+      <p class="lead">Analis data dengan pengalaman enam tahun di industri logistik dan e-commerce. Terbiasa mengubah data transaksi yang berantakan menjadi laporan yang bisa langsung dipakai tim operasional dan manajemen untuk mengambil keputusan. Saat ini fokus pada otomasi pelaporan dan peramalan permintaan.</p>
+    </section>
+
+    <section id="pengalaman">
+      <h2>Pengalaman kerja</h2>
+
+      <article class="job">
+        <header>
+          <div>
+            <h3>Senior Data Analyst</h3>
+            <p class="where">PT Nusantara Niaga Digital, Jakarta</p>
+          </div>
+          <time>Mar 2022 – sekarang</time>
+        </header>
+        <ul>
+          <li>Membangun dasbor penjualan harian di Power BI yang menggantikan 14 laporan Excel manual, menghemat sekitar 20 jam kerja per minggu.</li>
+          <li>Membuat model peramalan stok yang menurunkan kasus barang kosong sebesar 18% dalam dua kuartal.</li>
+          <li>Membimbing tiga analis junior dan menyusun standar penulisan query SQL untuk tim.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <header>
+          <div>
+            <h3>Data Analyst</h3>
+            <p class="where">PT Cakra Ekspedisi, Tangerang</p>
+          </div>
+          <time>Agu 2019 – Feb 2022</time>
+        </header>
+        <ul>
+          <li>Menganalisis data pengiriman untuk menemukan rute dengan keterlambatan tertinggi; hasilnya dipakai untuk mengatur ulang jadwal armada.</li>
+          <li>Mengotomatiskan rekap biaya operasional bulanan dengan Python, dari tiga hari kerja menjadi dua jam.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <header>
+          <div>
+            <h3>Staf Riset dan Pelaporan</h3>
+            <p class="where">PT Mitra Survei Indonesia, Bandung</p>
+          </div>
+          <time>Jul 2018 – Jul 2019</time>
+        </header>
+        <ul>
+          <li>Mengolah dan membersihkan data survei konsumen dari lebih dari 5.000 responden per proyek.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="pendidikan">
+      <h2>Pendidikan</h2>
+      <div class="edu">
+        <div>
+          <h3>S1 Statistika, Institut Teknologi Bandung</h3>
+          <p>IPK 3,52 / 4,00</p>
+        </div>
+        <time>2014 – 2018</time>
+      </div>
+      <div class="edu">
+        <div>
+          <h3>Sertifikat Google Data Analytics</h3>
+          <p>Coursera</p>
+        </div>
+        <time>2020</time>
+      </div>
+    </section>
+
+    <section id="proyek">
+      <h2>Proyek pilihan</h2>
+      <div class="projects">
+        <article class="project">
+          <h3>Peramalan permintaan produk</h3>
+          <p>Model deret waktu untuk 400 produk, dipakai tim pengadaan untuk menentukan jumlah pesanan mingguan.</p>
+          <a href="https://github.com/rizkypratama/demand-forecast">Lihat di GitHub</a>
+        </article>
+        <article class="project">
+          <h3>Dasbor kinerja kurir</h3>
+          <p>Dasbor interaktif yang menampilkan ketepatan waktu, tingkat gagal kirim, dan biaya per paket di setiap wilayah.</p>
+          <a href="https://github.com/rizkypratama/courier-dashboard">Lihat di GitHub</a>
+        </article>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer>Diperbarui Oktober 2026</footer>
+
+</body>
+</html>
